@@ -1,0 +1,12 @@
+.content::before{
+    content: "\f002"; 
+}
+nav{
+    height: 4rem;
+}
+
+.vertical{
+    width: 10rem;
+    height: calc(100vh - 4rem);
+    color: white;
+}
