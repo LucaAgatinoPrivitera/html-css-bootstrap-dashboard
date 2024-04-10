@@ -1,12 +1,33 @@
 .content::before{
     content: "\f002"; 
 }
+
 nav{
     height: 4rem;
 }
 
 .vertical{
-    width: 10rem;
+    width: 7rem;
     height: calc(100vh - 4rem);
     color: white;
+}
+
+.m_10r{
+    margin-left: 7rem;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(calc(-50%));
+}
+
+.button_bread{
+    font-size: 1rem;
+    padding: 1px;
+}
+
+button a{
+    font-size: 1rem !important;
 }

@@ -12,7 +12,7 @@
 <body>
 
     <!-- NAV-->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light position-sticked">
         <div class="container-fluid">
             <div class="row w-100">
                 <div class="col-lg-2 pe-0">
@@ -21,7 +21,7 @@
                 <div class="col-lg-8 p-0 d-flex">
                     <span class="fa-solid fa-bars m-2 text-center">
                     </span>
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezione di Laravel" aria-label="Search">
                     </form>
                 </div>
                 <div class="icons col-lg-2 text-end ps-0">
@@ -34,7 +34,8 @@
         </div>
       </nav>
     
-      <nav>
+      <!-- Seconda NAV-->
+      <nav class="position-fixed">
         <div class="bg-dark vertical d-flex flex-column align-items-center justify-content-between py-4">
             <div>
                 <div>
@@ -54,7 +55,51 @@
             <i class="fa-solid fa-gear m-2"></i><span class="m-2">Admin</span>
         </div>
         </div>
+              
       </nav>
+      <div class="m_10r p-3 bg-primary">
+        <div class="row">
+            <!-- Prima colonna -->
+            <div class="col-lg-6">
+                <div class="text-light">
+                    <span class="h2 me-3">Boolean</span><button class="btn btn-dark me-2 p-1 rounded-pill text-center mt-0"><a class="text-light text-decoration-none button_bread" href="#">Piano blaze</a></button>
+                </div>
+                <ol class="breadcrumb my-2">
+                    <li class="breadcrumb-item">
+                        <button class="btn btn-dark me-2 p-1 rounded-pill"><a class="text-light text-decoration-none button_bread" href="#">3 app</a></button>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <button class="btn btn-dark me-2 p-1 rounded-pill"><a class="text-light text-decoration-none button_bread" href="#">Boolean mobile app</a></button>
+                        <button class="btn btn-dark me-2 p-1 rounded-pill"><a class="text-light text-decoration-none button_bread" href="#">Boolean mobile app</a></button>
+                        <button class="btn btn-dark me-2 p-1 rounded-pill"><a class="text-light text-decoration-none button_bread" href="#">Boolean mobile app</a></button>
+                    </li>
+                </ol>
+            </div>
+            <!-- Seconda colonna -->
+            <div class="col-lg">
+                <p class="students text-light">Studenti online negli ultimi 30 minuti</p>
+                <p class="students_nr text-light h2">125</p>
+            </div>
+            <!-- Terza colonna -->
+            <div class="col-lg text-light text-end me-4">
+                <span class="me-4">Nuovo studente</span>
+                <i class="fa-solid fa-plus p-2 border rounded"></i>
+            </div>
+
+        </div>
+        </div>
+
+
+      </div>
       
+      <main>
+        <div class="container m_10r">
+            <div class="row">
+                <div class="col-lg-4">
+
+                </div>
+            </div>
+        </div>
+      </main>
 </body>
 </html>
