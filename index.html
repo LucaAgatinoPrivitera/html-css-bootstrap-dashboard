@@ -12,7 +12,7 @@
 <body>
 
     <!-- NAV-->
-    <nav class="navbar navbar-light bg-light position-sticked">
+    <nav class="navbar navbar-light bg-light position-fixed w-100">
         <div class="container-fluid">
             <div class="row w-100">
                 <div class="col-lg-2 pe-0">
@@ -57,7 +57,7 @@
         </div>
               
       </nav>
-      <div class="m_10r p-3 bg-primary">
+      <div class="m_7r p-3 nav_fix bg-primary">
         <div class="row">
             <!-- Prima colonna -->
             <div class="col-lg-6">
@@ -93,9 +93,93 @@
       </div>
       
       <main>
-        <div class="container m_10r">
+        <div class="container m_7r my-4">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-8">
+                    <!-- Tabella -->
+                    <div class="card mb-4">
+                        <div class="card-header h3">Prossime classi</div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col" class="text-center">Data inizio</th>
+                            <th scope="col" class="text-center">ROI</th>
+                            <th scope="col" class="text-center">Stato</th>
+                            <th scope="col" class="text-center">Azioni</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt="">Classe75</td>
+                            <td>15 Feb 2021</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center"><span class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
+                            <td class="text-center">
+                                <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
+                                <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt="">Classe75</td>
+                            <td>15 Feb 2021</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center"><span class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
+                            <td class="text-center">
+                                <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
+                                <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt="">Classe75</td>
+                            <td>15 Feb 2021</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center"><span class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
+                            <td class="text-center">
+                                <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
+                                <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                    
+                      <div class="card">
+                        <div class="card-header h3">F.A.Q.</div>
+                      <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item border-0">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed border-bottom w_95 m-auto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Accordion Item #1
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed border-bottom w_95 m-auto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Accordion Item #2
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed w_95 m-auto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Accordion Item #3
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                 </div>
             </div>

@@ -5,14 +5,18 @@
 nav{
     height: 4rem;
 }
+.nav_fix{
+    padding-top: 6rem !important;
+}
 
 .vertical{
     width: 7rem;
     height: calc(100vh - 4rem);
     color: white;
+    margin-top: 4rem;
 }
 
-.m_10r{
+.m_7r{
     margin-left: 7rem;
 }
 
@@ -31,3 +35,13 @@ nav{
 button a{
     font-size: 1rem !important;
 }
+
+.class_avatar{
+    width: 25px;
+}
+
+.w_95{
+    width: 95%;
+}
+
+/* La part della faq non so perché ma ha i bordi in basso rotti */
