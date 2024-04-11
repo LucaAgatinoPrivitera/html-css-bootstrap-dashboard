@@ -25,9 +25,15 @@
           <a class="navbar-brand"><img src="./img/logo.svg" alt="" class="mw-100"></a>
         </div>
         <div class="col-lg-8 p-0 d-flex">
-          <div class="w-100">
-            <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezione di Laravel"
-              aria-label="Search">
+          <div class="w-100 border grigio rounded bg-white p-1">
+            <div class="input-group flex-nowrap">
+              <button class="border-0 rounded-start bg-white">
+                <span class="input-group-text border-right-0 bg-white border-0" id="addon-wrapping"><i
+                    class="fas fa-search"></i></span>
+              </button>
+              <input type="search" class="form-control border-0" placeholder="Prova a cercare: Lezione di Laravel"
+                aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
             </form>
           </div>
 
@@ -68,7 +74,7 @@
   <div class="ml_vertical p-3 nav_fix bg-primary">
     <div class="row">
       <!-- Prima colonna -->
-      <div class="col-lg-7">
+      <div class="col-lg-7" style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
         <div class="text-light d-flex align-items-center">
           <span class="h2 me-3">Boolean</span>
           <button class="btn btn-dark my-2 p-1 rounded-pill text-center">
@@ -98,7 +104,10 @@
       <!-- Terza colonna -->
       <div class="col-lg-2 text-light text-end me-2 p-0">
         <span class="me-2">Nuovo studente</span>
-        <i class="fa-solid fa-plus p-2 border rounded"></i>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
+          <i class="fa-solid fa-plus p-2 border rounded"></i>
+        </button>
       </div>
 
     </div>
@@ -126,9 +135,9 @@
               </thead>
               <tbody class="pb-2">
                 <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
                   <td>15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
@@ -143,9 +152,9 @@
                   </td>
                 </tr>
                 <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
                   <td>15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
@@ -160,27 +169,9 @@
                   </td>
                 </tr>
                 <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
-                  <td>15 Feb 2021</td>
-                  <td class="text-center">20%</td>
-                  <td class="text-center"><span
-                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
-                  <td class="text-center">
-                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
-                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
-                    </button>
-                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
-                      <i class="fa-solid fa-trash p-1 text-muted"></i>
-                    </button>
-                  </td>
-                </tr>
-
-                <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
                   <td>15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
@@ -196,9 +187,27 @@
                 </tr>
 
                 <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
+                  <td>15 Feb 2021</td>
+                  <td class="text-center">20%</td>
+                  <td class="text-center"><span
+                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
+                  <td class="text-center">
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- Info -->
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
                   <td>15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
@@ -214,9 +223,9 @@
                 </tr>
 
                 <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
                   <td>15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
@@ -232,9 +241,9 @@
                 </tr>
 
                 <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
                   <td>15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
@@ -250,9 +259,9 @@
                 </tr>
 
                 <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
                   <td>15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
@@ -268,9 +277,9 @@
                 </tr>
 
                 <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
                   <td>15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
@@ -286,9 +295,9 @@
                 </tr>
 
                 <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
                   <td>15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
@@ -307,7 +316,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="card pb-1">
             <div class="card-header h3">F.A.Q.</div>
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item border-0">
@@ -408,6 +417,127 @@
 
 
         </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="w_40 offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form>
+          <div class="d-flex mb-4">
+            <div class="pe-1 w-100">
+              <label for="exampleInputEmail1" class="form-label">Nome</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <div class="ps-1 w-100">
+              <label for="exampleInputEmail1" class="form-label">Cognome</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+          </div>
+
+          <!-- Contenitore del form email password -->
+          <div class="d-flex mb-4">
+            <div class="w-100">
+              <!-- Titolo -->
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <!-- Div del contenuto dell'input -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+            <div class="ps-1 w-100">
+              <label for="exampleInputEmail1" class="form-label">Password</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+          </div>
+
+          <!-- Contenitore del form email password -->
+          <div class="d-flex mb-4">
+            <div class="w-100">
+              <!-- Titolo -->
+              <label for="exampleInputEmail1" class="form-label">Indirizzo Email</label>
+              <!-- Div del contenuto dell'input -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+            <div class="ps-1 w-100">
+              <label for="exampleInputEmail1" class="form-label">Password</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+          </div>
+
+          <!-- Indirizzo -->
+          <div class="form-group mb-4">
+            <label for="exampleInputEmail1">Indirizzo</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <!-- Città -->
+          <div class="d-flex mb-4">
+            <div class="form-group w-100 pe-1">
+              <label for="exampleInputEmail1">Città</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <!-- Stato -->
+            <div class="w-100 px-1">
+              <label for="exampleInputEmail1">Stato</label>
+              <select class="form-control">
+                <option>Scegli...</option>
+                <option>Catania</option>
+                <option>Torino</option>
+                <option>Milano</option>
+                <option>Roma</option>
+              </select>
+            </div>
+
+            <!-- CAP -->
+            <div class="form-group w-100 pe-1">
+              <label for="exampleInputEmail1">CAP</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+          </div>
+
+          <!-- Insert file -->
+          <div class="mb-4">
+            <label for="formFile" class="form-label">Foto</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Seleziona per proseguire
+            </label>
+          </div>
+
+          <button type="button" class="btn btn-primary">Salva</button>
+          <button type="button" class="btn btn-warning">Svuota</button>
+
+        </form>
       </div>
     </div>
   </main>
