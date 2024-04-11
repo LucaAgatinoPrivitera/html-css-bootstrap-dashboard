@@ -16,8 +16,14 @@ nav{
     margin-top: 4rem;
 }
 
-.m_7r{
+.ml_7r{
     margin-left: 7rem;
+}
+.pl_7r{
+    padding-left: 7rem;
+}
+.pl_8r{
+    padding-left: 8rem;
 }
 
 .breadcrumb-item+.breadcrumb-item::before{
