@@ -55,4 +55,10 @@ button a{
     background-image: url(../img/sidebar-bg.png);
 }
 
+button.border.border-dark.btn.btn-light.rounded.p-1 i{
+    width: 1.4rem;
+    height: 1.4rem;
+    text-align: center !important;
+}
+
 /* La part della faq non so perché ma ha i bordi in basso rotti */

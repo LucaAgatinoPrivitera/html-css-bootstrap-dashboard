@@ -25,9 +25,12 @@
           <a class="navbar-brand"><img src="./img/logo.svg" alt="" class="mw-100"></a>
         </div>
         <div class="col-lg-8 p-0 d-flex">
-          <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezione di Laravel"
-            aria-label="Search">
-          </form>
+          <div class="w-100">
+            <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezione di Laravel"
+              aria-label="Search">
+            </form>
+          </div>
+
         </div>
         <div class="icons col-lg-2 text-end ps-0">
           <i class="fa-solid fa-bars m-2 text-center"></i>
@@ -48,11 +51,11 @@
         </div>
 
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2">Home</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2">Stats</span>
         </div>
 
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2">Home</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2">Signals</span>
         </div>
       </div>
 
@@ -66,19 +69,21 @@
     <div class="row">
       <!-- Prima colonna -->
       <div class="col-lg-7">
-        <div class="text-light">
-          <span class="h2 me-3">Boolean</span><button class="btn btn-dark me-2 p-1 rounded-pill text-center mt-0"><a
-              class="text-light text-decoration-none button_bread fs_p8" href="#">Piano blaze</a></button>
+        <div class="text-light d-flex align-items-center">
+          <span class="h2 me-3">Boolean</span>
+          <button class="btn btn-dark my-2 p-1 rounded-pill text-center">
+            <a class="text-light text-decoration-none button_bread fs_p8" href="#">Piano blaze</a>
+          </button>
         </div>
         <ol class="breadcrumb my-2">
           <li class="breadcrumb-item">
-            <button class="btn btn-dark me-2 p-1 rounded-pill"><a
+            <button class="btn btn-dark me-0 p-1 rounded-pill"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">3 app</a></button>
           </li>
           <li class="breadcrumb-item">
-            <button class="btn btn-dark me-2 p-1 rounded-pill"><a
+            <button class="btn btn-dark me-1 p-1 rounded-pill"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
-            <button class="btn btn-dark me-2 p-1 rounded-pill"><a
+            <button class="btn btn-dark me-1 p-1 rounded-pill"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
             <button class="btn btn-dark me-0 p-1 rounded-pill"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
@@ -129,8 +134,12 @@
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
-                    <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
-                    <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
                   </td>
                 </tr>
                 <!-- Info -->
@@ -142,8 +151,12 @@
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
-                    <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
-                    <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
                   </td>
                 </tr>
                 <!-- Info -->
@@ -155,36 +168,12 @@
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
-                    <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
-                    <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
-                  </td>
-                </tr>
-
-                <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
-                  <td>15 Feb 2021</td>
-                  <td class="text-center">20%</td>
-                  <td class="text-center"><span
-                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
-                  <td class="text-center">
-                    <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
-                    <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
-                  </td>
-                </tr>
-
-                <!-- Info -->
-                <tr>
-                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
-                      alt="">Classe 75</td>
-                  <td>15 Feb 2021</td>
-                  <td class="text-center">20%</td>
-                  <td class="text-center"><span
-                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
-                  <td class="text-center">
-                    <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
-                    <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
                   </td>
                 </tr>
 
@@ -197,8 +186,30 @@
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
-                    <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
-                    <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- Info -->
+                <tr>
+                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
+                      alt="">Classe 75</td>
+                  <td>15 Feb 2021</td>
+                  <td class="text-center">20%</td>
+                  <td class="text-center"><span
+                      class="py-1 px-2 stato bg-warning rounded text-center vert text-light ">process</span></td>
+                  <td class="text-center">
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
                   </td>
                 </tr>
 
@@ -211,8 +222,12 @@
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
-                    <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
-                    <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
                   </td>
                 </tr>
 
@@ -225,8 +240,12 @@
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
-                    <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
-                    <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
                   </td>
                 </tr>
 
@@ -239,8 +258,12 @@
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
-                    <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
-                    <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
                   </td>
                 </tr>
 
@@ -253,8 +276,30 @@
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
-                    <i class="fa-solid fa-pencil border border-dark rounded p-1 text-muted"></i>
-                    <i class="fa-solid fa-trash border border-dark rounded p-1 text-muted"></i>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- Info -->
+                <tr>
+                  <td class="d-flex justify-content-start"><img class="class_avatar me-2" src="./img/class-avatar.jpg"
+                      alt="">Classe 75</td>
+                  <td>15 Feb 2021</td>
+                  <td class="text-center">20%</td>
+                  <td class="text-center"><span
+                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
+                  <td class="text-center">
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
                   </td>
                 </tr>
               </tbody>
