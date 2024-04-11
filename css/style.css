@@ -50,4 +50,8 @@ button a{
     width: 95%;
 }
 
+.fs_p8{
+    font-size: 0.8rem !important;
+}
+
 /* La part della faq non so perché ma ha i bordi in basso rotti */
