@@ -10,20 +10,17 @@ nav{
 }
 
 .vertical{
-    width: 7rem;
+    width: 8rem;
     height: calc(100vh - 4rem);
     color: white;
     margin-top: 4rem;
 }
 
-.ml_7r{
-    margin-left: 7rem;
+.ml_vertical{
+    margin-left: 8rem;
 }
-.pl_7r{
-    padding-left: 7rem;
-}
-.pl_8r{
-    padding-left: 8rem;
+.pl_vertical{
+    padding-left: 9rem;
 }
 
 .breadcrumb-item+.breadcrumb-item::before{
@@ -52,6 +49,10 @@ button a{
 
 .fs_p8{
     font-size: 0.8rem !important;
+}
+
+.sfondo{
+    background-image: url(../img/sidebar-bg.png);
 }
 
 /* La part della faq non so perché ma ha i bordi in basso rotti */
