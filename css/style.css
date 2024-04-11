@@ -23,6 +23,21 @@ nav{
     padding-left: 9rem;
 }
 
+@media screen and (max-width: 992px) {
+    .vertical{
+        width: 5rem;
+        height: calc(100vh - 4rem);
+        color: white;
+        margin-top: 4rem;
+    }
+    .ml_vertical{
+        margin-left: 5rem;
+    }
+    .pl_vertical{
+        padding-left: 6rem;
+    }
+}
+
 .breadcrumb-item+.breadcrumb-item::before{
     color: white;
     position: relative;

@@ -18,13 +18,16 @@
 <body>
 
   <!-- NAV-->
-  <nav class="navbar navbar-light bg-light position-fixed w-100 z-3">
+  <nav class="navbar navbar-light bg-light position-fixed w-100 z-3 align-content-center">
     <div class="container-fluid">
-      <div class="row w-100">
-        <div class="col-lg-2 pe-0">
-          <a class="navbar-brand"><img src="./img/logo.svg" alt="" class="mw-100"></a>
+      <div class="row w-100 align-items-center">
+        <div class="col-lg-2 col-md-3 pe-0">
+          <a class="navbar-brand"><img src="./img/logo.svg" alt="" class="mw-100 d-md-none d-lg-block"></a>
+          <a class="navbar-brand img-fluid"><img src="./img/mobile-logo.png" alt=""
+              class="mw-100 d-md-block d-lg-none img-fluid"></a>
         </div>
-        <div class="col-lg-8 p-0 d-flex">
+        <!-- Search bar -->
+        <div class="col-lg-8 col-md-8 p-0 d-flex h-100">
           <div class="w-100 border grigio rounded bg-white p-1">
             <div class="input-group flex-nowrap">
               <button class="border-0 rounded-start bg-white">
@@ -36,12 +39,12 @@
             </div>
             </form>
           </div>
-
         </div>
-        <div class="icons col-lg-2 text-end ps-0">
-          <i class="fa-solid fa-bars m-2 text-center"></i>
-          <i class="fa-solid fa-question m-2 text-center"></i>
-          <i class="fa-solid fa-bell m-2 text-center"></i>
+
+        <div class="icons col-lg-2 col-md text-end ps-0">
+          <i class="fa-solid fa-bars m-2 text-center d-md-none"></i>
+          <i class="fa-solid fa-question m-2 text-center d-md-none d-lg-inline"></i>
+          <i class="fa-solid fa-bell m-2 text-center d-md-none d-lg-inline"></i>
           <i class="fa-solid fa-bell m-2 text-center text-warning"></i>
         </div>
       </div>
@@ -53,20 +56,20 @@
     <div class="bg-dark vertical d-flex flex-column align-items-center justify-content-between py-4 sfondo">
       <div>
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2">Home</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline">Home</span>
         </div>
 
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2">Stats</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline">Stats</span>
         </div>
 
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2">Signals</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline">Signals</span>
         </div>
       </div>
 
       <div>
-        <i class="fa-solid fa-gear m-2"></i><span class="m-2">Admin</span>
+        <i class="fa-solid fa-gear m-2"></i><span class="m-2 d-md-none d-lg-inline">Admin</span>
       </div>
     </div>
 
@@ -138,7 +141,7 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td>15 Feb 2021</td>
+                  <td class="text-center">15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
@@ -155,7 +158,7 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td>15 Feb 2021</td>
+                  <td class="text-center">15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
@@ -172,25 +175,7 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td>15 Feb 2021</td>
-                  <td class="text-center">20%</td>
-                  <td class="text-center"><span
-                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
-                  <td class="text-center">
-                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
-                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
-                    </button>
-                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
-                      <i class="fa-solid fa-trash p-1 text-muted"></i>
-                    </button>
-                  </td>
-                </tr>
-
-                <!-- Info -->
-                <tr class="align-middle">
-                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
-                      class="align-text-top">Classe 75</span></td>
-                  <td>15 Feb 2021</td>
+                  <td class="text-center">15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
@@ -208,7 +193,25 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td>15 Feb 2021</td>
+                  <td class="text-center">15 Feb 2021</td>
+                  <td class="text-center">20%</td>
+                  <td class="text-center"><span
+                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
+                  <td class="text-center">
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- Info -->
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
+                  <td class="text-center">15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-warning rounded text-center vert text-light ">process</span></td>
@@ -226,7 +229,7 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td>15 Feb 2021</td>
+                  <td class="text-center">15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
@@ -244,7 +247,7 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td>15 Feb 2021</td>
+                  <td class="text-center">15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
@@ -262,7 +265,7 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td>15 Feb 2021</td>
+                  <td class="text-center">15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
@@ -280,7 +283,7 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td>15 Feb 2021</td>
+                  <td class="text-center">15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
@@ -298,7 +301,7 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td>15 Feb 2021</td>
+                  <td class="text-center">15 Feb 2021</td>
                   <td class="text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
@@ -316,7 +319,7 @@
 
           </div>
 
-          <div class="card pb-1">
+          <div class="card pb-1 mb-md-4">
             <div class="card-header h3">F.A.Q.</div>
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item border-0">
