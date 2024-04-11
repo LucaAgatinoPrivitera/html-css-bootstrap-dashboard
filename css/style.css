@@ -1,86 +1,104 @@
-.content::before{
-    content: "\f002"; 
+.content::before {
+    content: "\f002";
 }
 
-nav{
+nav {
     height: 4rem;
 }
-.nav_fix{
+
+.nav_fix {
     padding-top: 6rem !important;
 }
 
-.vertical{
+.vertical {
     width: 8rem;
     height: calc(100vh - 4rem);
     color: white;
     margin-top: 4rem;
 }
 
-.ml_vertical{
+.ml_vertical {
     margin-left: 8rem;
 }
-.pl_vertical{
+
+.pl_vertical {
     padding-left: 9rem;
 }
 
 @media screen and (max-width: 992px) {
-    .vertical{
+    .vertical {
         width: 5rem;
         height: calc(100vh - 4rem);
         color: white;
         margin-top: 4rem;
     }
-    .ml_vertical{
+
+    .ml_vertical {
         margin-left: 5rem;
     }
-    .pl_vertical{
+
+    .pl_vertical {
         padding-left: 6rem;
     }
 }
 
-.breadcrumb-item+.breadcrumb-item::before{
+.breadcrumb-item+.breadcrumb-item::before {
     color: white;
     position: relative;
     top: 50%;
     transform: translateY(calc(-50%));
 }
 
-.button_bread{
+.button_bread {
     font-size: 1rem;
     padding: 1px;
 }
 
-button a{
+button a {
     font-size: 1rem !important;
 }
 
-.class_avatar{
+.class_avatar {
     width: 25px;
 }
 
-.w_95{
+.w_95 {
     width: 95%;
 }
-.w_40{
+
+.w_40 {
     width: 40% !important;
 }
 
-.fs_p8{
-    font-size: 0.8rem !important;
+@media screen and (max-width: 992px) {
+    .w_100 {
+        width: 100% !important;
+    }
+
+
+    .fs_p8 {
+        font-size: 0.8rem !important;
+    }
+
+    .sfondo {
+        background-image: url(../img/sidebar-bg.png);
+    }
+
+    button.border.border-dark.btn.btn-light.rounded.p-1 i {
+        width: 1.4rem;
+        height: 1.4rem;
+        text-align: center !important;
+    }
+
+    .grigio {
+        color: rgb(146, 146, 146);
+    }
 }
 
-.sfondo{
-    background-image: url(../img/sidebar-bg.png);
-}
-
-button.border.border-dark.btn.btn-light.rounded.p-1 i{
-    width: 1.4rem;
-    height: 1.4rem;
-    text-align: center !important;
-}
-
-.grigio{
-    color: rgb(146, 146, 146);
+@media screen and (max-width: 768px) {
+    .w_sm_65 {
+        width: 65%;
+    }
 }
 
 /* La part della faq non so perché ma ha i bordi in basso rotti */

@@ -21,13 +21,16 @@
   <nav class="navbar navbar-light bg-light position-fixed w-100 z-3 align-content-center">
     <div class="container-fluid">
       <div class="row w-100 align-items-center">
-        <div class="col-lg-2 col-md-1 pe-0">
-          <a class="navbar-brand"><img src="./img/logo.svg" alt="" class="mw-100 d-md-none d-lg-inline"></a>
-          <a class="navbar-brand img-fluid d-md-block w-100 h-100"><img src="./img/mobile-logo.png" alt=""
-              class="mw-100 d-md-inline d-lg-none py-2 pe-2 img-fluid"></a>
+        <div class="col-lg-2 col-md-1 col-sm-2 pe-0">
+          <a class="navbar-brand d-md-none d-lg-block d-sm-none w-100 h-100">
+            <img src="./img/logo.svg" alt="" class="mw-100">
+          </a>
+          <a class="navbar-brand d-md-block d-lg-none d-sm-block w-100 h-100">
+            <img src="./img/mobile-logo.png" alt="" class="d-md-inline d-sm-inline py-2 pe-2 img-fluid w_sm_65">
+          </a>
         </div>
         <!-- Search bar -->
-        <div class="col-lg-8 col-md-8 p-0 d-flex h-100">
+        <div class="col-lg-8 col-md-10 col-sm-8 p-0 d-flex h-100">
           <div class="w-100 border grigio rounded bg-white p-1">
             <div class="input-group flex-nowrap">
               <button class="border-0 rounded-start bg-white">
@@ -40,11 +43,11 @@
             </form>
           </div>
         </div>
-
-        <div class="icons col-lg-2 col-md text-end ps-0">
-          <i class="fa-solid fa-bars m-2 text-center d-md-none"></i>
-          <i class="fa-solid fa-question m-2 text-center d-md-none d-lg-inline"></i>
-          <i class="fa-solid fa-bell m-2 text-center d-md-none d-lg-inline"></i>
+        <!-- Bar con notifiche -->
+        <div class="icons col-lg-2 col-md-1 col-sm-2 text-end ps-0 pe-md-0 pe-sm-0">
+          <i class="fa-solid fa-bars m-2 text-center d-md-none d-sm-none"></i>
+          <i class="fa-solid fa-question m-2 text-center d-md-none d-lg-inline d-sm-none"></i>
+          <i class="fa-solid fa-bell m-2 text-center d-md-none d-lg-inline d-sm-none"></i>
           <i class="fa-solid fa-bell m-2 text-center text-warning"></i>
         </div>
       </div>
@@ -56,20 +59,20 @@
     <div class="bg-dark vertical d-flex flex-column align-items-center justify-content-between py-4 sfondo">
       <div>
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline">Home</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none">Home</span>
         </div>
 
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline">Stats</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none">Stats</span>
         </div>
 
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline">Signals</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none">Signals</span>
         </div>
       </div>
 
       <div>
-        <i class="fa-solid fa-gear m-2"></i><span class="m-2 d-md-none d-lg-inline">Admin</span>
+        <i class="fa-solid fa-gear m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none">Admin</span>
       </div>
     </div>
 
@@ -77,7 +80,8 @@
   <div class="ml_vertical p-3 nav_fix bg-primary">
     <div class="row">
       <!-- Prima colonna -->
-      <div class="col-lg-7 col-md-4" style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+      <div class="col-lg-7 col-md-4 order-sm-2 order-1 py-sm-3" style="--bs-breadcrumb-divider: '>>';"
+        aria-label="breadcrumb">
         <div class="text-light d-flex align-items-center">
           <span class="h2 me-3">Boolean</span>
           <button class="btn btn-dark my-2 p-1 rounded-pill text-center">
@@ -102,12 +106,12 @@
         </ol>
       </div>
       <!-- Seconda colonna -->
-      <div class="col-lg col-md-4 p-0">
+      <div class="col-lg col-md-4 p-0 order-3 ps-sm-3">
         <p class="students text-light">Studenti online negli ultimi 30 minuti</p>
         <p class="students_nr text-light h2">125</p>
       </div>
       <!-- Terza colonna -->
-      <div class="col-lg-2 col-md-4 text-light text-end me-2 me-md-0 p-0">
+      <div class="col-lg-2 col-md-4 text-light text-end me-2 me-md-0 p-0 order-1 text-sm-start ps-sm-3">
         <span class="me-2">Nuovo studente</span>
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
           aria-controls="offcanvasExample">
@@ -132,8 +136,8 @@
               <thead>
                 <tr>
                   <th scope="col">Nome</th>
-                  <th scope="col" class="text-center">Data inizio</th>
-                  <th scope="col" class="text-center">ROI</th>
+                  <th scope="col" class="text-center d-sm-none">Data inizio</th>
+                  <th scope="col" class="d-sm-none text-center">ROI</th>
                   <th scope="col" class="text-center">Stato</th>
                   <th scope="col" class="text-center">Azioni</th>
                 </tr>
@@ -143,8 +147,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="text-center">15 Feb 2021</td>
-                  <td class="text-center">20%</td>
+                  <td class="d-sm-none text-center">15 Feb 2021</td>
+                  <td class="d-sm-none text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -160,8 +164,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="text-center">15 Feb 2021</td>
-                  <td class="text-center">20%</td>
+                  <td class="d-sm-none text-center">15 Feb 2021</td>
+                  <td class="d-sm-none text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -177,26 +181,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="text-center">15 Feb 2021</td>
-                  <td class="text-center">20%</td>
-                  <td class="text-center"><span
-                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
-                  <td class="text-center">
-                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
-                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
-                    </button>
-                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
-                      <i class="fa-solid fa-trash p-1 text-muted"></i>
-                    </button>
-                  </td>
-                </tr>
-
-                <!-- Info -->
-                <tr class="align-middle">
-                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
-                      class="align-text-top">Classe 75</span></td>
-                  <td class="text-center">15 Feb 2021</td>
-                  <td class="text-center">20%</td>
+                  <td class="d-sm-none text-center">15 Feb 2021</td>
+                  <td class="d-sm-none text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -213,8 +199,26 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="text-center">15 Feb 2021</td>
-                  <td class="text-center">20%</td>
+                  <td class="d-sm-none text-center">15 Feb 2021</td>
+                  <td class="d-sm-none text-center">20%</td>
+                  <td class="text-center"><span
+                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
+                  <td class="text-center">
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- Info -->
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
+                  <td class="d-sm-none text-center">15 Feb 2021</td>
+                  <td class="d-sm-none text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-warning rounded text-center vert text-light ">process</span></td>
                   <td class="text-center">
@@ -231,8 +235,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="text-center">15 Feb 2021</td>
-                  <td class="text-center">20%</td>
+                  <td class="d-sm-none text-center">15 Feb 2021</td>
+                  <td class="d-sm-none text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -249,8 +253,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="text-center">15 Feb 2021</td>
-                  <td class="text-center">20%</td>
+                  <td class="d-sm-none text-center">15 Feb 2021</td>
+                  <td class="d-sm-none text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -267,8 +271,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="text-center">15 Feb 2021</td>
-                  <td class="text-center">20%</td>
+                  <td class="d-sm-none text-center">15 Feb 2021</td>
+                  <td class="d-sm-none text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -285,8 +289,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="text-center">15 Feb 2021</td>
-                  <td class="text-center">20%</td>
+                  <td class="d-sm-none text-center">15 Feb 2021</td>
+                  <td class="d-sm-none text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -303,8 +307,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="text-center">15 Feb 2021</td>
-                  <td class="text-center">20%</td>
+                  <td class="d-sm-none text-center">15 Feb 2021</td>
+                  <td class="d-sm-none text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -321,7 +325,7 @@
 
           </div>
 
-          <div class="card pb-1 mb-md-4">
+          <div class="card pb-1 mb-md-4 mb-sm-4">
             <div class="card-header h3">F.A.Q.</div>
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item border-0">
@@ -430,7 +434,7 @@
 
 
 
-    <div class="w_40 offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+    <div class="w_40 w_100 offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
