@@ -21,10 +21,10 @@
   <nav class="navbar navbar-light bg-light position-fixed w-100 z-3 align-content-center">
     <div class="container-fluid">
       <div class="row w-100 align-items-center">
-        <div class="col-lg-2 col-md-3 pe-0">
-          <a class="navbar-brand"><img src="./img/logo.svg" alt="" class="mw-100 d-md-none d-lg-block"></a>
+        <div class="col-lg-2 col-md-1 pe-0">
+          <a class="navbar-brand"><img src="./img/logo.svg" alt="" class="mw-100 d-md-none d-lg-inline"></a>
           <a class="navbar-brand img-fluid"><img src="./img/mobile-logo.png" alt=""
-              class="mw-100 d-md-block d-lg-none img-fluid"></a>
+              class="mw-100 d-md-inline d-lg-none w-100 h-100 py-2"></a>
         </div>
         <!-- Search bar -->
         <div class="col-lg-8 col-md-8 p-0 d-flex h-100">
@@ -77,7 +77,7 @@
   <div class="ml_vertical p-3 nav_fix bg-primary">
     <div class="row">
       <!-- Prima colonna -->
-      <div class="col-lg-7" style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+      <div class="col-lg-7 col-md-4" style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
         <div class="text-light d-flex align-items-center">
           <span class="h2 me-3">Boolean</span>
           <button class="btn btn-dark my-2 p-1 rounded-pill text-center">
@@ -90,22 +90,24 @@
                 class="text-light text-decoration-none button_bread fs_p8" href="#">3 app</a></button>
           </li>
           <li class="breadcrumb-item">
-            <button class="btn btn-dark me-1 p-1 rounded-pill"><a
+            <button class="btn btn-dark me-1 px-2 py-1 rounded-pill d-lg-none"><a
+                class="text-light text-decoration-none button_bread fs_p8" href="#">+</a></button>
+            <button class="btn btn-dark me-1 p-1 rounded-pill d-md-none d-lg-inline"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
-            <button class="btn btn-dark me-1 p-1 rounded-pill"><a
+            <button class="btn btn-dark me-1 p-1 rounded-pill d-md-none d-lg-inline"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
-            <button class="btn btn-dark me-0 p-1 rounded-pill"><a
+            <button class="btn btn-dark me-0 p-1 rounded-pill d-md-none d-lg-inline"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
           </li>
         </ol>
       </div>
       <!-- Seconda colonna -->
-      <div class="col-lg p-0">
+      <div class="col-lg col-md-4 p-0">
         <p class="students text-light">Studenti online negli ultimi 30 minuti</p>
         <p class="students_nr text-light h2">125</p>
       </div>
       <!-- Terza colonna -->
-      <div class="col-lg-2 text-light text-end me-2 p-0">
+      <div class="col-lg-2 col-md-4 text-light text-end me-2 me-md-0 p-0">
         <span class="me-2">Nuovo studente</span>
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
           aria-controls="offcanvasExample">
