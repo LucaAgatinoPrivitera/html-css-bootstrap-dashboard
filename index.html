@@ -21,8 +21,8 @@
   <nav class="navbar navbar-light bg-light position-fixed w-100 z-3 align-content-center">
     <div class="container-fluid">
       <div class="row w-100 align-items-center">
-        <div class="col-lg-2 col-md-1 col-sm-2 pe-0">
-          <a class="navbar-brand d-md-none d-lg-block d-sm-none w-100 h-100">
+        <div class="col-lg-2 col-md-1 col-sm-2 col-2 pe-0">
+          <a class="navbar-brand d-md-none d-lg-block d-sm-none d-none w-100 h-100">
             <img src="./img/logo.svg" alt="" class="mw-100">
           </a>
           <a class="navbar-brand d-md-block d-lg-none d-sm-block w-100 h-100">
@@ -30,7 +30,7 @@
           </a>
         </div>
         <!-- Search bar -->
-        <div class="col-lg-8 col-md-10 col-sm-8 p-0 d-flex h-100">
+        <div class="col-lg-8 col-md-10 col-sm-8 col-8 p-0 d-flex h-100">
           <div class="w-100 border grigio rounded bg-white p-1">
             <div class="input-group flex-nowrap">
               <button class="border-0 rounded-start bg-white">
@@ -44,10 +44,10 @@
           </div>
         </div>
         <!-- Bar con notifiche -->
-        <div class="icons col-lg-2 col-md-1 col-sm-2 text-end ps-0 pe-md-0 pe-sm-0">
-          <i class="fa-solid fa-bars m-2 text-center d-md-none d-sm-none"></i>
-          <i class="fa-solid fa-question m-2 text-center d-md-none d-lg-inline d-sm-none"></i>
-          <i class="fa-solid fa-bell m-2 text-center d-md-none d-lg-inline d-sm-none"></i>
+        <div class="icons col-lg-2 col-md-1 col-sm-2 col-2 text-end ps-0 pe-md-0 pe-sm-0">
+          <i class="fa-solid fa-bars m-2 text-center d-md-none d-sm-none d-none"></i>
+          <i class="fa-solid fa-question m-2 text-center d-md-none d-lg-inline d-sm-none d-none"></i>
+          <i class="fa-solid fa-bell m-2 text-center d-md-none d-lg-inline d-sm-none d-none"></i>
           <i class="fa-solid fa-bell m-2 text-center text-warning"></i>
         </div>
       </div>
@@ -59,20 +59,20 @@
     <div class="bg-dark vertical d-flex flex-column align-items-center justify-content-between py-4 sfondo">
       <div>
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none">Home</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none d-none">Home</span>
         </div>
 
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none">Stats</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none d-none">Stats</span>
         </div>
 
         <div>
-          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none">Signals</span>
+          <i class="fa-solid fa-house m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none d-none">Signals</span>
         </div>
       </div>
 
       <div>
-        <i class="fa-solid fa-gear m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none">Admin</span>
+        <i class="fa-solid fa-gear m-2"></i><span class="m-2 d-md-none d-lg-inline d-sm-none d-none">Admin</span>
       </div>
     </div>
 
@@ -80,8 +80,8 @@
   <div class="ml_vertical p-3 nav_fix bg-primary">
     <div class="row">
       <!-- Prima colonna -->
-      <div class="col-lg-7 col-md-4 order-sm-2 order-1 order-sm-2 py-sm-3" style="--bs-breadcrumb-divider: '>>';"
-        aria-label="breadcrumb">
+      <div class="col-lg-8 col-md-4 order-sm-2 order-lg-1 order-md-1 order-sm-2 py-sm-3 order-2 pe-lg-0"
+        style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
         <div class="text-light d-flex align-items-center">
           <span class="h2 me-3">Boolean</span>
           <button class="btn btn-dark my-2 p-1 rounded-pill text-center">
@@ -96,22 +96,23 @@
           <li class="breadcrumb-item">
             <button class="btn btn-dark me-1 px-2 py-1 rounded-pill d-lg-none"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">+</a></button>
-            <button class="btn btn-dark me-1 p-1 rounded-pill d-md-none d-lg-inline d-sm-none"><a
+            <button class="btn btn-dark me-1 p-1 rounded-pill d-md-none d-lg-inline d-sm-none d-none"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
-            <button class="btn btn-dark me-1 p-1 rounded-pill d-md-none d-lg-inline d-sm-none"><a
+            <button class="btn btn-dark me-1 p-1 rounded-pill d-md-none d-lg-inline d-sm-none d-none"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
-            <button class="btn btn-dark me-0 p-1 rounded-pill d-md-none d-lg-inline d-sm-none"><a
+            <button class="btn btn-dark me-0 p-1 rounded-pill d-md-none d-lg-inline d-sm-none d-none"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
           </li>
         </ol>
       </div>
       <!-- Seconda colonna -->
-      <div class="col-lg col-md-4 p-0 order-3 ps-sm-3 order-sm-3">
+      <div class="col-lg-2 col-md-4 p-0 order-3 ps-sm-3 order-sm-3 order-md-2 order-lg-3 ps-3 pt-2 order-3 pl-lg-0">
         <p class="students text-light">Studenti online negli ultimi 30 minuti</p>
         <p class="students_nr text-light h2">125</p>
       </div>
       <!-- Terza colonna -->
-      <div class="col-lg-2 col-md-4 text-light text-end me-2 me-md-0 p-0 order-3 order-sm-1 text-sm-start ps-sm-3">
+      <div
+        class="col-lg-2 col-md-4 text-light text-lg-end text-md-end me-2 me-md-0 pl-2 order-1 order-sm-1 order-md-3 order-lg-3 text-sm-start ps-sm-3 text-start text-lg-center">
         <span class="me-2">Nuovo studente</span>
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
           aria-controls="offcanvasExample">
