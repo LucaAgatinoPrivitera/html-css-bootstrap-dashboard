@@ -63,23 +63,23 @@
     <div class="bg-dark vertical d-flex flex-column align-items-center justify-content-between py-4 sfondo">
       <div>
         <div>
-          <i class="fa-solid fa-house m-2"></i><a href="#"
+          <i class="fa-solid fa-house mx-2 my-3"></i><a href="#"
             class="m-2 d-md-none d-lg-inline d-sm-none d-none text-decoration-none text-light">Home</a>
         </div>
 
         <div>
-          <i class="fa-solid fa-house m-2"></i><a href="#"
+          <i class="fa-solid fa-house mx-2 my-3"></i><a href="#"
             class="m-2 d-md-none d-lg-inline d-sm-none d-none text-decoration-none text-light">Stats</a>
         </div>
 
         <div>
-          <i class="fa-solid fa-house m-2"></i><a href="#"
+          <i class="fa-solid fa-house mx-2 my-3"></i><a href="#"
             class="m-2 d-md-none d-lg-inline d-sm-none d-none text-decoration-none text-light">Signals</a>
         </div>
       </div>
 
       <div>
-        <i class="fa-solid fa-gear m-2"></i><a href="#"
+        <i class="fa-solid fa-gear mx-2 my-3"></i><a href="#"
           class="m-2 d-md-none d-lg-inline d-sm-none d-none text-decoration-none text-light">Admin</a>
       </div>
     </div>
@@ -88,7 +88,8 @@
   <div class="ml_vertical p-3 nav_fix bg-primary">
     <div class="row">
       <!-- Prima colonna -->
-      <div class="col-lg-8 col-md-4 order-sm-2 order-lg-1 order-md-1 order-sm-2 py-sm-3 order-2 pe-lg-0"
+      <div
+        class="col-lg-8 col-md-4 col-sm-12 order-sm-2 order-lg-1 order-md-1 order-sm-2 py-sm-3 order-2 pe-lg-0 pt-md-0 pt-lg-0 "
         style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
         <div class="text-light d-flex align-items-center">
           <span class="h2 me-3">Boolean</span>
@@ -104,7 +105,7 @@
           <li class="breadcrumb-item">
             <button class="btn btn-dark me-1 px-2 py-1 rounded-pill d-lg-none"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">+</a></button>
-            <button class="btn btn-dark me-1 p-1 rounded-pill d-md-none d-lg-inline d-sm-none d-none"><a
+            <button class="btn btn-dark me-1 p-1 rounded-pill d-sm-none d-lg-inline d-sm-inline d-none"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
             <button class="btn btn-dark me-1 p-1 rounded-pill d-md-none d-lg-inline d-sm-none d-none"><a
                 class="text-light text-decoration-none button_bread fs_p8" href="#">Boolean mobile app</a></button>
@@ -114,13 +115,14 @@
         </ol>
       </div>
       <!-- Seconda colonna -->
-      <div class="col-lg-2 col-md-4 p-0 order-3 ps-sm-3 order-sm-3 order-md-2 order-lg-3 ps-3 pt-2 order-3 pl-lg-0">
+      <div
+        class="col-lg-2 col-md-4 col-sm-12 p-0 order-3 ps-sm-3 order-sm-3 order-md-2 order-lg-3 ps-3 pt-2 order-3 pl-lg-0 pt-md-0 pt-lg-0">
         <p class="students text-light">Studenti online negli ultimi 30 minuti</p>
         <p class="students_nr text-light h2">125</p>
       </div>
       <!-- Terza colonna -->
       <div
-        class="col-lg-2 col-md-4 text-light text-lg-end text-md-end me-2 me-md-0 pl-2 order-1 order-sm-1 order-md-3 order-lg-3 text-sm-start ps-sm-3 text-start text-lg-center">
+        class="col-lg-2 col-md-4 col-sm-12 text-light text-lg-end text-md-end me-2 me-md-0 pl-2 order-1 order-sm-1 order-md-3 order-lg-3 text-sm-start ps-sm-3 text-start text-lg-center pt-md-0 pt-lg-0">
         <span class="me-2">Nuovo studente</span>
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
           aria-controls="offcanvasExample">
@@ -145,8 +147,8 @@
               <thead>
                 <tr>
                   <th scope="col">Nome</th>
-                  <th scope="col" class="text-center d-sm-none">Data inizio</th>
-                  <th scope="col" class="d-sm-none text-center">ROI</th>
+                  <th scope="col" class="fix_table text-center">Data inizio</th>
+                  <th scope="col" class="fix_table text-center">ROI</th>
                   <th scope="col" class="text-center">Stato</th>
                   <th scope="col" class="text-center">Azioni</th>
                 </tr>
@@ -156,8 +158,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="d-sm-none text-center">15 Feb 2021</td>
-                  <td class="d-sm-none text-center">20%</td>
+                  <td class="fix_table text-center">15 Feb 2021</td>
+                  <td class="fix_table text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -173,8 +175,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="d-sm-none text-center">15 Feb 2021</td>
-                  <td class="d-sm-none text-center">20%</td>
+                  <td class="fix_table text-center">15 Feb 2021</td>
+                  <td class="fix_table text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -190,26 +192,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="d-sm-none text-center">15 Feb 2021</td>
-                  <td class="d-sm-none text-center">20%</td>
-                  <td class="text-center"><span
-                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
-                  <td class="text-center">
-                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
-                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
-                    </button>
-                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
-                      <i class="fa-solid fa-trash p-1 text-muted"></i>
-                    </button>
-                  </td>
-                </tr>
-
-                <!-- Info -->
-                <tr class="align-middle">
-                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
-                      class="align-text-top">Classe 75</span></td>
-                  <td class="d-sm-none text-center">15 Feb 2021</td>
-                  <td class="d-sm-none text-center">20%</td>
+                  <td class="fix_table text-center">15 Feb 2021</td>
+                  <td class="fix_table text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -226,8 +210,26 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="d-sm-none text-center">15 Feb 2021</td>
-                  <td class="d-sm-none text-center">20%</td>
+                  <td class="fix_table text-center">15 Feb 2021</td>
+                  <td class="fix_table text-center">20%</td>
+                  <td class="text-center"><span
+                      class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
+                  <td class="text-center">
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-pencil text-muted"></i> <!--border border-dark rounded -->
+                    </button>
+                    <button class="border border-dark btn btn-light rounded p-1 mx-1">
+                      <i class="fa-solid fa-trash p-1 text-muted"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- Info -->
+                <tr class="align-middle">
+                  <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
+                      class="align-text-top">Classe 75</span></td>
+                  <td class="fix_table text-center">15 Feb 2021</td>
+                  <td class="fix_table text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-warning rounded text-center vert text-light ">process</span></td>
                   <td class="text-center">
@@ -244,8 +246,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="d-sm-none text-center">15 Feb 2021</td>
-                  <td class="d-sm-none text-center">20%</td>
+                  <td class="fix_table text-center">15 Feb 2021</td>
+                  <td class="fix_table text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -262,8 +264,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="d-sm-none text-center">15 Feb 2021</td>
-                  <td class="d-sm-none text-center">20%</td>
+                  <td class="fix_table text-center">15 Feb 2021</td>
+                  <td class="fix_table text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -280,8 +282,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="d-sm-none text-center">15 Feb 2021</td>
-                  <td class="d-sm-none text-center">20%</td>
+                  <td class="fix_table text-center">15 Feb 2021</td>
+                  <td class="fix_table text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -298,8 +300,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="d-sm-none text-center">15 Feb 2021</td>
-                  <td class="d-sm-none text-center">20%</td>
+                  <td class="fix_table text-center">15 Feb 2021</td>
+                  <td class="fix_table text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">
@@ -316,8 +318,8 @@
                 <tr class="align-middle">
                   <td><img class="class_avatar me-2" src="./img/class-avatar.jpg" alt=""><span
                       class="align-text-top">Classe 75</span></td>
-                  <td class="d-sm-none text-center">15 Feb 2021</td>
-                  <td class="d-sm-none text-center">20%</td>
+                  <td class="fix_table text-center">15 Feb 2021</td>
+                  <td class="fix_table text-center">20%</td>
                   <td class="text-center"><span
                       class="py-1 px-2 stato bg-primary rounded text-center vert text-light ">Done</span></td>
                   <td class="text-center">

@@ -101,4 +101,10 @@ button a {
     }
 }
 
+@media screen and (max-width: 590px) {
+    .fix_table {
+        display: none;
+    }
+}
+
 /* La part della faq non so perché ma ha i bordi in basso rotti */
