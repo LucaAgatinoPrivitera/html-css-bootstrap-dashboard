@@ -25,6 +25,19 @@ nav {
     padding-left: 9rem;
 }
 
+.hover_:hover {
+    background-color: rgba(240, 248, 255, 0.445) !important;
+}
+
+.accordion_hover:hover {
+    background-color: aquamarine;
+    color: rgb(0, 183, 255);
+}
+
+.sfondo {
+    background-image: url(../img/sidebar-bg.png);
+}
+
 @media screen and (max-width: 992px) {
     .vertical {
         width: 5rem;
@@ -78,10 +91,6 @@ button a {
 
     .fs_p8 {
         font-size: 0.8rem !important;
-    }
-
-    .sfondo {
-        background-image: url(../img/sidebar-bg.png);
     }
 
     button.border.border-dark.btn.btn-light.rounded.p-1 i {
